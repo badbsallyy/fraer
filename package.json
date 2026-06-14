@@ -1,17 +1,12 @@
 {
-    "name": "pinterest",
+    "name": "pinterest-plugin",
     "private": true,
     "version": "0.0.0",
     "type": "module",
-    "main": "src/api/index.ts",
     "scripts": {
-        "dev": "run g:dev",
-        "build": "run g:build",
-        "check-biome": "run g:check-biome",
-        "check-eslint": "run g:check-eslint",
-        "pack": "run g:pack",
-        "preview": "run g:preview",
-        "check-typescript": "run g:check-typescript"
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview"
     },
     "dependencies": {
         "@tanstack/react-query": "^5.87.4",
@@ -25,6 +20,8 @@
     },
     "devDependencies": {
         "@types/react": "^18.3.24",
-        "@types/react-dom": "^18.3.7"
+        "@types/react-dom": "^18.3.7",
+        "typescript": "^5.9.2",
+        "vite": "^8.0.5"
     }
 }

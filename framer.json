@@ -1,0 +1,7 @@
+{
+    "id": "Pintrst",
+    "name": "Pinterest",
+    "modes": ["canvas", "editImage", "image"],
+    "prereleaseStyles": true,
+    "icon": "/icon.svg"
+}

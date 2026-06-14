@@ -22,6 +22,7 @@ const listPinsSchema = v.object({
 })
 
 export type PinterestPin = v.InferInput<typeof pinterestPinSchema>
+export type PinterestImage = v.InferInput<typeof pinterestImageSchema>
 
 const PINTEREST_ACCESS_TOKEN = import.meta.env.VITE_PINTEREST_ACCESS_TOKEN || ""
 const PINTEREST_BASE_URL = "https://api.pinterest.com/v3"

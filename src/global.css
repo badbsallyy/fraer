@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme inline {
+    --background-color-primary: var(--framer-color-bg);
+    --background-color-secondary: var(--framer-color-bg-secondary);
+    --background-color-tertiary: var(--framer-color-bg-tertiary);
+    --background-color-divider: var(--framer-color-divider);
+    --background-color-tint: var(--framer-color-tint);
+    --background-color-tint-dimmed: var(--framer-color-tint-dimmed);
+    --background-color-tint-dark: var(--framer-color-tint-dark);
+    --background-color-black-dimmed: rgba(0, 0, 0, 0.5);
+
+    --color-primary: var(--framer-color-text);
+    --color-secondary: var(--framer-color-text-secondary);
+    --color-tertiary: var(--framer-color-text-tertiary);
+    --color-reversed: var(--framer-color-text-reversed);
+
+    --border-color-divider: var(--framer-color-divider);
+
+    --text-2xs: 9px;
+}
+
+@layer base {
+    @import "framer-plugin/framer.css";
+
+    *,
+    ::after,
+    ::before,
+    ::backdrop,
+    ::file-selector-button {
+        border-color: var(--color-gray-200, currentcolor);
+    }
+}
+
+.no-scrollbar {
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}

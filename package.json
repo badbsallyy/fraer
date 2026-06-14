@@ -1,0 +1,30 @@
+{
+    "name": "pinterest",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "main": "src/api/index.ts",
+    "scripts": {
+        "dev": "run g:dev",
+        "build": "run g:build",
+        "check-biome": "run g:check-biome",
+        "check-eslint": "run g:check-eslint",
+        "pack": "run g:pack",
+        "preview": "run g:preview",
+        "check-typescript": "run g:check-typescript"
+    },
+    "dependencies": {
+        "@tanstack/react-query": "^5.87.4",
+        "classnames": "^2.5.1",
+        "framer-plugin": "3.11.0-alpha.12",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1",
+        "react-error-boundary": "^6.0.0",
+        "tailwindcss": "^4.1.13",
+        "valibot": "^1.2.0"
+    },
+    "devDependencies": {
+        "@types/react": "^18.3.24",
+        "@types/react-dom": "^18.3.7"
+    }
+}
